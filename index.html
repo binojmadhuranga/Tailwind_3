@@ -4,24 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Job Hired</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+ 
 
 
 </head>
 
 
 
-<body>
+<body class="max-w-full overflow-x-hidden">
 
   <!-- Nav bar -->
 
-  <div class="flex items-center justify-between w-full h-40 bg-white-500 ">
+  <div class="flex items-center justify-between w-[100vw] lg:h-40 sm:h-20 bg-white-500 md:h-30 bg-gray-500  md:bg-white sm:bg-white relative h-15 max-w-full ">
 
-    <div class="flex items-center justify-between gap-30">
-      <img src="/Assets/Group 13 (1).png" alt="image" class="pl-20 w-45 h-15">
-      <p class="text-2xl">Home</p>
-      <p class="text-2xl">Pricing</p>
+    <div class="items-center justify-between hidden sm:flex lg:gap-30 md:gap-10 sm:gap-5">
+      <img src="/Assets/Group 13 (1).png" alt="image"
+        class=" lg:pl-20 lg:w-40 lg:h-15 md:pl-10 md:h-10 md:w-30 sm:w-20 sm:h-8 sm:pl-2" />
+      <p class="lg:text-2xl md:text-xl sm:text-lg">Home</p>
+      <p class="lg:text-2xl md:text-xl sm:text-lg">Pricing</p>
 
 
     </div>
@@ -29,50 +32,67 @@
 
 
 
-    <div flex class="flex items-center gap-8 pr-10 ">
-      <p class="text-2xl">Company sign in</p>
-      <button class="w-40 h-10 text-white bg-blue-800 rounded-3xl ">Request a demo</button>
+    <div flex class="items-center hidden pr-5 sm:flex lg:pr-10 lg:gap-8 md:gap-10 sm:gap-8">
+      <p class="lg:text-2xl md:text-xl sm:text-lg">Company sign in</p>
+      <button
+        class="text-white bg-blue-800 lg:h-10 lg:w-40 md:rounded-3xl md:h-8 md:w-36 sm:text-lg sm:rounded-3xl sm:w-36">Request
+        a demo</button>
 
     </div>
+
+
+    <div class="h-10 sm:hidden">
+      <i class="absolute z-10 text-white bg-gray-500 text-[30px] fa-solid fa-bars right-1 top-2"></i>
+      
+    </div>
+
+    
+    
 
   </div>
 
+
   <!-- Section 1 -->
 
-  <div class="flex justify-between w-full gap-10 pl-20 mt-15 ">
+  <div class="flex flex-col items-center justify-between max-w-full mt-20 sm:flex-row lg:pl-10 md:pl-15 lg:gap-15 sm:pl-8 sm:mt-15 gap-18 xl:gap-3">
 
 
     <!-- Left side -->
-    <div class="flex w-[412px] flex-col gap-15  ">
+    <div class="flex w-[100vw] flex-col lg:gap-15 md:w-[312px] md:gap-10 sm:gap-10 sm:w-[312px] xl:w-[400px] gap-7 sm:items-start items-center">
 
 
-      <h2 class="text-[58px] font-bold leading-tight">Hire the best talent </h2>
+      <h2 class="lg:text-[58px] md:text-[45px] font-bold leading-tight sm:text-[38px] text-[38px] ">Hire the best talent </h2>
 
-      <div class="flex flex-col gap-5 ">
+      <div class="flex flex-col gap-2 lg:gap-5 md:gap-3">
 
         <div class="flex gap-2 ">
-          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image" class="w-4 h-5 pt-1">
-          <h2 class="font-semibold text-gray-500"> Reach Out to talents</h2>
+          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image"
+            class="md:pt-1 md:h-5 md:w-4 sm:h-5 sm:w-4 sm:pt-1 xl:h-6 xl:w-5 xl:pt-1">
+          <h2 class="font-semibold text-gray-500 sm:text-[18px] text-[20px] xl:text-[25px]"> Reach Out to talents</h2>
         </div>
 
         <div class="flex gap-2 ">
-          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image" class="w-4 h-5 pt-1">
-          <h2 class="font-semibold text-gray-500"> Manage database of talents</h2>
+          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image"
+            class="md:pt-1 md:h-5 md:w-4 sm:h-5 sm:w-4 sm:pt-1 xl:h-6 xl:w-5 xl:pt-1">
+          <h2 class="font-semibold text-gray-500 sm:text-[18px] text-[20px] xl:text-[25px]"> Manage database of talents</h2>
         </div>
 
         <div class="flex gap-2 ">
-          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image" class="w-4 h-5 pt-1">
-          <h2 class="font-semibold text-gray-500"> AI matching algorythms</h2>
+          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image"
+            class="md:pt-1 md:h-5 md:w-4 sm:h-5 sm:w-4 sm:pt-1 xl:h-6 xl:w-5 xl:pt-1">
+          <h2 class="font-semibold text-gray-500 sm:text-[18px] text-[20px] xl:text-[25px]"> AI matching algorythms</h2>
         </div>
 
         <div class="flex gap-2 ">
-          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image" class="w-4 h-5 pt-1">
-          <h2 class="font-semibold text-gray-500"> Fast hireing process</h2>
+          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image"
+            class="md:pt-1 md:h-5 md:w-4 sm:h-5 sm:w-4 sm:pt-1 xl:h-6 xl:w-5 xl:pt-1">
+          <h2 class="font-semibold text-gray-500 sm:text-[18px] text-[20px] xl:text-[25px]"> Fast hireing process</h2>
         </div>
 
         <div class="flex gap-2 ">
-          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image" class="w-4 h-5 pt-1">
-          <h2 class="font-semibold text-gray-500"> Cost effective hiring process</h2>
+          <img src="/Assets/akar-icons_circle-check-fill (1).png " alt="tik image"
+            class="md:pt-1 md:h-5 md:w-4 sm:h-5 sm:w-4 sm:pt-1 xl:h-6 xl:w-5 xl:pt-1">
+          <h2 class="font-semibold text-gray-500 sm:text-[18px] text-[20px] xl:text-[25px]"> Cost effective hiring process</h2>
         </div>
 
       </div>
@@ -80,7 +100,8 @@
 
       <!-- Button -->
 
-      <button class="bg-[#050A8B] w-[220px] h-[60px] rounded-[80px] text-white font-semibold text-[16px] ">
+      <button
+        class="bg-[#050A8B] lg:w-[220px] lg:h-[60px] md:w-[150px] md:h-[40px] rounded-[80px] text-white font-semibold lg:text-[16px] md:text-[14px] sm:w-[140px] sm:text-[13px] sm:h-[40px] h-[40px] w-[200px] ">
         Hire the best tealents
       </button>
 
@@ -92,8 +113,8 @@
 
     <!-- Right side -->
 
-    <div class="flex flex-col justify-center">
-      <img src="/Assets/Company dashboard (1).jpg" alt="image">
+    <div class="flex flex-col justify-center ">
+      <img src="/Assets/Company dashboard (1).jpg" alt="image" class=" sm:w-[50vw] w-[100vw]">
 
 
     </div>
@@ -109,15 +130,15 @@
 
   <!-- Section 2 -->
 
-  <div class="flex flex-col items-center justify-center gap-20 mb-10 mt-30">
+  <div class="flex flex-col items-center justify-center gap-18 md:mb-10 md:gap-20 md:mt-30 mt-25 sm:gap-20 ">
 
-    <div class="flex flex-col gap-2 w-[900px]  items-center">
+    <div class="flex flex-col  md:w-[100vw]  items-center gap-2">
 
       <div>
-        <h2 class="text-[30px] font-bold leading-tight ">Trusted by over 500 great business </h2>
+        <h2 class="md:text-[30px] font-bold leading-tight sm:text-[25px] text-[23px]">Trusted by over 500 great business </h2>
       </div>
 
-      <div class="w-[700px]">
+      <div class="md:w-[700px] sm:w-[600px]">
         <p class="text-center text-gray-400 ">
           Here are few list of companies ready to hire using HIRED platform to reach out to talent, manage talents and
           employ wisely.
@@ -127,37 +148,45 @@
     </div>
 
 
-    <div class="grid grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-4 md:grid-cols-2">
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Starbucks@2x.png" class="h-28 w-28" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Pepsi@2x.png" class="h-16 w-44" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Walmart@2x.png" class="h-18 w-46" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Azendoo@2x.png" class="w-40 h-12" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/CNN@2x.png" class="h-14 w-44" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Philips@2x.png" class="w-40 h-10" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Pizza Hut@2x.png" class="w-24 h-24" alt="image">
       </div>
 
-      <div class="flex items-center justify-center h-40 bg-gray-200 rounded-md w-60">
+      <div
+        class="flex items-center justify-center lg:h-40 bg-gray-200 rounded-md lg:w-60 md:w-[35vw] md:h-[25vh] sm:w-[45vw] sm:h-[32vh] w-[60vw] h-[30vh]">
         <img src="./Assets/Beanstalk@2x.png" class="h-12 w-28" alt="image">
       </div>
 
@@ -174,23 +203,31 @@
 
   <!-- Section 3 -->
 
-  <div class="relative flex justify-between gap-40 mt-40">
+  <div class="relative flex flex-col items-center justify-between gap-20 sm:flex-row lg:mt-40 lg:gap-40 md:mt-30 sm:mt-30 mt-25 sm:gap-0">
 
 
-    <div class="flex flex-col items-center justify-center w-[500px] h-[500px]    mx-auto">
-      <p class="font-bold text-[60px] ">Filter and reached to amazing talents </p>
-      <div class="h-[10%] w-[90%] bg-blue-900 blur-2xl"></div>
+    <div
+      class="flex flex-col items-center justify-center lg:w-[30vw] lg:h-[500px] md:w-[35vw] sm:w-[30vw] lg:mx-auto md:pl-[10px] ">
+      <p class="font-bold lg:text-[60px] md:text-[40px] relative sm:text-[35px] sm:pl-8 text-[30px] px-[10%] ">Filter and reached to amazing
+        talents
+      </p>
+      <div class="lg:h-[10%] lg:w-[90%] md:h-[10%] md:w-[90%]  bg-blue-900 blur-2xl"></div>
     </div>
+
+    <div class="absolute sm:h-[70px] sm:w-[90%]  bg-blue-700 sm:blur-3xl md:hidden sm:top-[40%] w-[80%] h-10 blur-[25px] top-[10%]"></div>
 
     <div>
-      <img src="/Assets/Frame 120552.png" alt="no" class="w-[500px] h-[500px] ">
+      <img src="/Assets/Frame 120552.png" alt="no" class="lg:w-[45vw] md:w-[45vw] sm:w-[37vw] w-[70vw]">
     </div>
+
+
+
 
 
     <!-- Card -->
 
     <div
-      class="w-[600px] h-[240px] bg-slate-100 absolute shadow-[0_55px_90px_-15px_rgba(0,0,50,0.55)] rounded-lg top-[30%] right-[10%] flex gap-3 pl-7 pt-8 pb-2 pr-2 opacity-95">
+      class="w-[600px] h-[240px] bg-slate-100 absolute shadow-[0_55px_90px_-15px_rgba(0,0,50,0.55)] rounded-lg lg:top-[30%] lg:right-[10%] md:flex gap-3 pl-7 pt-8 pb-2 pr-2 opacity-95 md:bottom-[5%] md:right-[1%]  hidden ">
 
 
       <div>
@@ -275,17 +312,18 @@
   <!-- Section 4 -->
 
 
-  <div class="relative flex gap-30 pt-50">
+  <div class="relative flex flex-col items-center justify-center mt-20 item- lg:gap-30 md:mt-50 md:gap-15 sm:mt-30 sm:gap-14 sm:flex-row gap-25">
 
-    <div class="relative">
-      <img src="/Assets/items.png" alt="items" class=" w-[70%]">
+    <div class="relative sm:w-[50%] w-[80%]">
+      <img src="/Assets/items.png" alt="items" class=" lg:w-[70%] md:w-[95%] sm:w-[70%] ">
 
-      <div
-        class="absolute w-[45%] h-[55%] bg-[#000000] left-[35%] bottom-[20%] rounded-[40px] flex flex-col p-3 gap-5 items-center">
+      <div class="absolute md:w-[65%] h-[65%] bg-[#000000] left-[35%] md:bottom-[20%] rounded-[40px] flex flex-col p-3 gap-2 items-center
+        sm:w-[60%] sm:h-[70% ] sm:bottom-[20%] bottom-10 justify-evenly ">
 
         <p class="font-semibold text-white text-[20px]">Let's start!</p>
-        <p class="text-gray-400 text-[19px] ">Creating or adding new tasks couldn't be easier</p>
-        <button class="text-white bg-[#050A8B] w-[85%] h-[30%] rounded-3xl">+ Post a job</button>
+        <p class="text-gray-400 text-[19px] sm:text-[13px]">Creating or adding new tasks couldn't be easier</p>
+        <button class="text-white bg-[#050A8B] w-[85%] lg:h-[30%] md:h-[25%] sm:h-[28%] rounded-3xl ">+ Post a
+          job</button>
 
 
       </div>
@@ -297,9 +335,9 @@
 
 
 
-    <div class="flex flex-col items-center justify-center w-[40vw]">
+    <div class="flex flex-col items-center justify-center sm:w-[40vw] md:gap-0 w-[60vw] ">
 
-      <h1 class="font-bold text-[50px]">Let thousands of talents reach out to you</h1>
+      <h1 class="font-bold lg:text-[50px] md:text-[40px] sm:text-[35px] text-[30px]">Let thousands of talents reach out to you</h1>
       <div class="h-[10%] w-[50%] bg-blue-800 blur-2xl"></div>
 
 
@@ -313,60 +351,63 @@
 
   <!-- Section 5 -->
 
-  <div class="flex flex-col items-center mt-35">
+  <div class="flex flex-col items-center max-w-full md:gap-0 sm:gap-1 mt-35">
 
-    <div class="w-[90%] h-[250px] bg-black rounded-[40px] flex items-center justify-around">
+    <div
+      class="w-[90%] lg:h-[250px] md:h-[180px] sm:h-[150px] bg-black rounded-[40px] flex items-center justify-around h-[120px]">
 
       <div class="flex flex-col ">
 
-        <p class="text-gray-500">For companies</p>
-        <h1 class="text-white font-bold text-[30px]">Hire great talents with HIRVED</h1>
+        <p class="text-gray-500 md:text-[20px] sm:text-[15px] text-[12px]">For companies</p>
+        <h1 class="text-white font-bold md:text-[30px] sm:text-[20px] text-[12px]">Hire great talents with HIRVED</h1>
 
       </div>
 
       <div class="w-[30%] h-[100%] flex justify-center items-center">
-        <button class="text-white bg-[#050A8B] w-[45%] h-[25%] rounded-[30px]"> Learn more</button>
+        <button class="text-white bg-[#050A8B] sm:w-[55%] sm:h-[25%] rounded-[30px] text-[12px]  h-[30%] w-[80%]"> Learn more</button>
       </div>
 
     </div>
 
 
     <!-- Footer -->
-    <div class="bg-[#050A8B] w-[100%] h-[40vh] flex mt-20 justify-center items-center gap-15  ">
+    <div
+      class="bg-[#050A8B] w-[100vw] md:h-[30vh] lg:h-[40vh] flex mt-20 justify-evenly items-center md:gap-5 lg:gap-15 max-w-full  sm:h-[25vh] h-[24vh] gap-5">
 
 
-      <div class="flex flex-col gap-4 w-[150px] h-[200px]">
+      <div class="flex relative md:top-[-10px] flex-col gap-4 md:w-[150px]  md:h-[200px] sm:p-3 sm:h-[150px] sm:w-[150px] w-[20%] h-[60%] pl-2">
 
-        <img src="/Assets/Hirved.png" class="h-[30px] w-[90px]" />
-        <p class="text-white text-[15px]">Explore the job pool and get hired faster with our AI and machine learning
+        <img src="/Assets/Hirved.png" class="md:h-[30px] md:w-[90px] sm:h-[30px] sm:w-[90px] h-[25px] w-[50px] pt-2 sm:pt-0 " />
+        <p class="text-white md:text-[15px] sm:text-[12px] text-[10px]">Explore the job pool and get hired faster with our AI and
+          machine learning
           algorythms. </p>
       </div>
 
 
-      <div class="flex flex-col gap-4 w-[150px]  h-[200px]">
-        <h1 class="text-white text-[20px]">Product</h1>
-        <p class="text-white text-[15px]"> Talents </p>
-        <p class="text-white text-[15px]"> Pricing </p>
+      <div class="flex flex-col gap-4 md:w-[150px]  md:h-[200px]  sm:h-[150px] sm:w-[140px]  w-[20%] h-[60%]">
+        <h1 class="text-white sm:text-[20px] text-[15px]">Product</h1>
+        <p class="text-white sm:text-[15px] text-[12px]"> Talents </p>
+        <p class="text-white sm:text-[15px] text-[12px]"> Pricing </p>
       </div>
 
 
-      <div class="flex flex-col w-[150px]  h-[200px]">
-        <h1 class="text-white text-[20px]">Work</h1>
-        <p class="text-white text-[15px]"> Blog </p>
-        
+      <div class="flex flex-col  md:w-[150px]  md:h-[200px] sm:h-[150px] sm:w-[140px]  w-[20%] h-[60%] gap-4">
+        <h1 class="text-white sm:text-[20px] text-[15px]">Work</h1>
+        <p class="text-white sm:text-[15px] text-[12px] "> Blog </p>
+
       </div>
 
-      <div class="flex flex-col w-[150px]  h-[200px]">
-        <h1 class="text-white text-[20px]">Stucff</h1>
-        <p class="text-white text-[15px]"> Privacy </p>
-        <p class="text-white text-[15px]"> Support </p>
-        
+      <div class="flex flex-col md:w-[150px]  md:h-[200px] sm:h-[150px] sm:w-[140px]  w-[20%] h-[60%] gap-4">
+        <h1 class="text-white sm:text-[20px] text-[15px]">Stucff</h1>
+        <p class="text-white sm:text-[15px] text-[12px]"> Privacy </p>
+        <p class="text-white sm:text-[15px] text-[12px]"> Support </p>
+
       </div>
 
-      <div class="flex flex-col w-[150px]  h-[200px]">
-       
+      <div class="flex flex-col  md:w-[150px]  md:h-[200px] sm:h-[150px] sm:w-[140px]  w-[20%] h-[60%] gap-4">
+
         <p class="text-white text-[15px]"> English </p>
-        
+
       </div>
 
 
